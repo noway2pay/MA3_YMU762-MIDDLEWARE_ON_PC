@@ -1855,5 +1855,29 @@ if ( delta_time >= 0 )
     30
     31
 
+
++++ So the voices are pushed into the RAM directly (bypassing FIFO) +++
+static SINT32	MaPhr_Standby(UINT8 phr_id, void* ext_args)
+->
+            if(pVi->bType == VOICE_TYPE_MA2) {	//	MA-2 voice type
+                dwSize = ConvertMA3Voice(pVi->pbVoice, pVi->bSize, &(bVoiceParam[0]));
+                MaDevDrv_SendDirectRamData(dwVocAdr, 0, &(bVoiceParam[0]), dwSize);
+            }
+            else {								//	MA-3 voice type
+                machdep_memcpy(&(bVoiceParam[0]), pVi->pbVoice, pVi->bSize);
+                // Prohibit XOF=1
+                bVoiceParam[2] = (UINT8)(bVoiceParam[2] & 0xF7);
+                bVoiceParam[9] = (UINT8)(bVoiceParam[9] & 0xF7);
+                if (pVi->bSize > 16) {
+                    bVoiceParam[16] = (UINT8)(bVoiceParam[16] & 0xF7);
+                    bVoiceParam[23] = (UINT8)(bVoiceParam[23] & 0xF7);
+                }
+                MaDevDrv_SendDirectRamData(dwVocAdr, 0, &(bVoiceParam[0]), (UINT32)pVi->bSize);
+
++++ Freq parameters are sent when playing (see MaSndDrv_NoteOn()) +++
+-> MAKE_KEY_ON( seq_id, num, voice_info.address, vo_volume, pitch, ch )
+
+Interesting: there is a way to change volume and pitch while the note is playing
+-> MAKE_VEL_PITCH( seq_id, num, vo_volume, pitch )
 */
 

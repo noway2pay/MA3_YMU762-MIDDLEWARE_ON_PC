@@ -128,6 +128,7 @@
 
 #define MAKE_TIMER_PART(seq_id, num, delta_time)							\
 {																			\
+	printf("     +MAKE_TIMER_PART:seq_id %d, num %d, delta_time %d\n", seq_id, num, delta_time);	\
 	if ( delta_time >= 0 )													\
 	{																		\
 		packet_buf[seq_id][num++] = (UINT8)( 0x80 );						\
@@ -136,12 +137,14 @@
 
 #define MAKE_ADDRESS_PART(seq_id, num, reg_index)							\
 {																			\
+	printf("     +MAKE_ADDRESS_PART:seq_id %d, num %d, reg_index %d\n", seq_id, num, reg_index);	\
 	packet_buf[seq_id][num++] = (UINT8)(  reg_index       & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)( (reg_index >> 7) | 0x80 );			\
 }
 
 #define MAKE_KEY_ON(seq_id, num, voice_id, vo_volume, pitch, ch)			\
 {																			\
+	printf("     +MAKE_KEY_ON:seq_id %d, num %d, voice_id %d, vo_volume %d, pitch %d, ch %d\n", seq_id, num, voice_id, vo_volume, pitch, ch);	\
 	packet_buf[seq_id][num++] = (UINT8)( (voice_id >> 7)  & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  voice_id        & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  vo_volume       & 0x7C );			\
@@ -152,11 +155,13 @@
 
 #define MAKE_KEY_OFF(seq_id, num, ch)										\
 {																			\
+	printf("     +MAKE_KEY_OFF:seq_id %d, num %d, ch %d\n", seq_id, num, ch);	\
 	packet_buf[seq_id][num++] = (UINT8)(  ch              | 0x80 );			\
 }
 
 #define MAKE_VEL_PITCH(seq_id, num, vo_volume, pitch)						\
 {																			\
+	printf("     +MAKE_VEL_PITCH:seq_id %d, num %d, vo_volume %d, pitch %d\n", seq_id, num, vo_volume, pitch);	\
 	packet_buf[seq_id][num++] = (UINT8)(  vo_volume       & 0x7C );			\
 	packet_buf[seq_id][num++] = (UINT8)( (pitch >> 7)     & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  pitch           | 0x80 );			\
@@ -164,42 +169,50 @@
 
 #define MAKE_PITCH(seq_id, num, pitch)										\
 {																			\
+	printf("     +MAKE_PITCH:seq_id %d, num %d, pitch %d\n", seq_id, num, pitch);	\
 	packet_buf[seq_id][num++] = (UINT8)( (pitch >> 7)     & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  pitch           | 0x80 );			\
 }
 
 #define MAKE_MUTE(seq_id, num, ch)											\
 {																			\
+	printf("     +MAKE_MUTE:seq_id %d, num %d, ch %d\n", seq_id, num, ch);	\
 	packet_buf[seq_id][num++] = (UINT8)( (0x20 + ch)  	  | 0x80 );			\
 }
 
 #define MAKE_RST(seq_id, num, ch)											\
 {																			\
+	printf("     +MAKE_RST:seq_id %d, num %d, ch %d\n", seq_id, num, ch);	\
 	packet_buf[seq_id][num++] = (UINT8)( (0x10 + ch)  	  | 0x80 );			\
 }
 
 #define MAKE_RST_MUTE(seq_id, num, ch)										\
 {																			\
+	printf("     +MAKE_RST_MUTE:seq_id %d, num %d, ch %d\n", seq_id, num, ch);	\
 	packet_buf[seq_id][num++] = (UINT8)( (0x30 + ch)  	  | 0x80 );			\
 }
 
 #define MAKE_CHANNEL_VOLUME(seq_id, num, volume)							\
 {																			\
+	printf("     +MAKE_CHANNEL_VOLUME:seq_id %d, num %d, volume %d\n", seq_id, num, volume);	\
 	packet_buf[seq_id][num++] = (UINT8)( (volume & 0x7C)  | 0x80 );			\
 }
 
 #define MAKE_PANPOT(seq_id, num, pan)										\
 {																			\
+	printf("     +MAKE_PANPOT:seq_id %d, num %d, pan %d\n", seq_id, num, pan);	\
 	packet_buf[seq_id][num++] = (UINT8)( (pan & 0x7C)     | 0x80 );			\
 }
 
 #define MAKE_SFX(seq_id, num, sfx)											\
 {																			\
+	printf("     +MAKE_SFX:seq_id %d, num %d, sfx %d\n", seq_id, num, sfx);	\
 	packet_buf[seq_id][num++] = (UINT8)(  sfx             | 0x80 );			\
 }
 
 #define MAKE_STREAM_ON(seq_id, num, ram_adrs, vo_volume, pitch, ch)			\
 {																			\
+	printf("     +MAKE_STREAM_ON:seq_id %d, num %d, ram_adrs %d, vo_volume %d, pitch %d, ch %d\n", seq_id, num, ram_adrs, vo_volume, pitch, ch);	\
 	packet_buf[seq_id][num++] = (UINT8)( (ram_adrs >> 7)  & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  ram_adrs        & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  vo_volume       & 0x7C );			\
@@ -210,32 +223,38 @@
 
 #define MAKE_SOFTINT_RAM(seq_id, num, ram_val)								\
 {																			\
+	printf("     +MAKE_SOFTINT_RAM:seq_id %d, num %d, ram_val %d\n", seq_id, num, ram_val);	\
 	packet_buf[seq_id][num++] = (UINT8)(  ram_val         | 0x80 );			\
 }
 
 #define MAKE_SOFTINT(seq_id, num, int_val)									\
 {																			\
+	printf("     +MAKE_SOFTINT:seq_id %d, num %d, int_val %d\n", seq_id, num, int_val);	\
 	packet_buf[seq_id][num++] = (UINT8)(  int_val         | 0x80 );			\
 }
 
 #define MAKE_LED(seq_id, num, led)											\
 {																			\
+	printf("     +MAKE_LED:seq_id %d, num %d, led %d\n", seq_id, num, led);	\
 	packet_buf[seq_id][num++] = (UINT8)(  led             | 0x80 );			\
 }
 
 #define MAKE_MOTOR(seq_id, num, mtr)										\
 {																			\
+	printf("     +MAKE_MOTOR:seq_id %d, num %d, mtr %d\n", seq_id, num, mtr);	\
 	packet_buf[seq_id][num++] = (UINT8)(  mtr             | 0x80 );			\
 }
 
 #define MAKE_PITCH_BEND(seq_id, num, bend)									\
 {																			\
+	printf("     +MAKE_PITCH_BEND:seq_id %d, num %d, bend %d\n", seq_id, num, bend);	\
 	packet_buf[seq_id][num++] = (UINT8)( (bend >> 7)      & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)(  bend            | 0x80 );			\
 }
 
 #define MAKE_NOP(seq_id, num, reg_index)									\
 {																			\
+	printf("     +MAKE_NOP:seq_id %d, num %d, reg_index %d\n", seq_id, num, reg_index);	\
 	packet_buf[seq_id][num++] = (UINT8)(  reg_index       & 0x7F );			\
 	packet_buf[seq_id][num++] = (UINT8)( (reg_index >> 7) | 0x80 );			\
 	packet_buf[seq_id][num++] = (UINT8)(  0x00            | 0x80 );			\

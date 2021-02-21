@@ -54,8 +54,8 @@ UINT8 volume = 0;
 //#define MMF OP1_Marimba_D1_AR_10_11
 //#define MMF OP4_Marimba_D1_AR_13_14
 //#define MMF MMF_02_YAMAHA_MA3_TEST
-//#define MMF NINJA2_3_MID
-#define MMF MedivoJJ
+#define MMF NINJA2_3_MID
+//#define MMF MedivoJJ
 
 int main(void)
 {

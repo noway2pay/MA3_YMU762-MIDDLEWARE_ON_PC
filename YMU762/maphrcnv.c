@@ -1010,18 +1010,18 @@ static SINT32	MaPhr_Standby(UINT8 phr_id, void* ext_args)
 	if (dwVocAdr != 0xFFFFFFFF) {
 	for(i = 0; i < MAX_PHRASE_VOICES; i++)
 	{
-		/*	extend voice	*/
+		//	extend voice
 		pVi = &(pPi->VocInfo[i]);
 		MAPHRCNV_DBGMSG((" bBankNo [%X]\n", pVi->bBankNo));
 		if(pVi->bBankNo != 0x00) {
 			MAPHRCNV_DBGMSG((" bType [%X]\n", pVi->bType));
-			if(pVi->bType == VOICE_TYPE_MA2) {	/*	MA-2 voice type	*/
+			if(pVi->bType == VOICE_TYPE_MA2) {	//	MA-2 voice type
 				dwSize = ConvertMA3Voice(pVi->pbVoice, pVi->bSize, &(bVoiceParam[0]));
 				MaDevDrv_SendDirectRamData(dwVocAdr, 0, &(bVoiceParam[0]), dwSize);
 			}
-			else {								/*	MA-3 voice type	*/
+			else {								//	MA-3 voice type
 				machdep_memcpy(&(bVoiceParam[0]), pVi->pbVoice, pVi->bSize);
-				/* Prohibit XOF=1                                               */
+				// Prohibit XOF=1
 				bVoiceParam[2] = (UINT8)(bVoiceParam[2] & 0xF7);
 				bVoiceParam[9] = (UINT8)(bVoiceParam[9] & 0xF7);
 				if (pVi->bSize > 16) {
