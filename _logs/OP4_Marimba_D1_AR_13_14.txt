@@ -1,0 +1,1341 @@
+MaSound_Initialize
+MaDevDrv_Initialize
+    MaDevDrv_AddIntFunc: 0
+    MaDevDrv_AddIntFunc: 1
+    MaDevDrv_AddIntFunc: 2
+    MaDevDrv_AddIntFunc: 3
+    MaDevDrv_AddIntFunc: 4
+    MaDevDrv_AddIntFunc: 5
+    MaDevDrv_AddIntFunc: 6
+    MaDevDrv_AddIntFunc: 7
+MaDevDrv_InitRegisters:
+      machdep_WriteStatusFlagReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:07 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:09 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:0A (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:0F (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:01 (EMULATED !)
+      machdep_WriteStatusFlagReg:0B (EMULATED !)
+      machdep_WriteDataReg:03 (EMULATED !)
+      machdep_WriteStatusFlagReg:0C (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:02 (EMULATED !)
+      machdep_WriteStatusFlagReg:05 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:06 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:0A (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:0D (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+  MaDevDrv_DeviceControl: cmd=7 p1=2 p2=9 p3=0
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:01 (EMULATED !)
+      machdep_WriteStatusFlagReg:05 (EMULATED !)
+      machdep_WriteDataReg:02 (EMULATED !)
+      machdep_WriteStatusFlagReg:06 (EMULATED !)
+      machdep_WriteDataReg:09 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaDevDrv_PowerManagement: mode=1
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:05 (EMULATED !)
+      machdep_WriteDataReg:0E (EMULATED !)
+      machdep_WriteStatusFlagReg:06 (EMULATED !)
+      machdep_WriteDataReg:3E (EMULATED !)
+      machdep_WriteStatusFlagReg:05 (EMULATED !)
+      machdep_WriteDataReg:0C (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+MaDevDrv_VerifyRegisters: (EMULATED !)
+      machdep_WriteStatusFlagReg:05 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:06 (EMULATED !)
+      machdep_WriteDataReg:04 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+  MaDevDrv_DeviceControl: cmd=8 p1=3 p2=3 p3=3
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:63 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:BF (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaResMgr_Initialize
+MaSndDrv_Initialize:
+ PhrAudCnv_Initialize
+MaSound_DeviceControl: cmd=3 p1=0 p2=31 p3=31
+MaSndDrv_DeviceControl: cmd=3 p1=0 p2=31 p3=31
+  MaDevDrv_DeviceControl: cmd=3 p1=0 p2=31 p3=31
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:08 (EMULATED !)
+      machdep_WriteDataReg:1F (EMULATED !)
+      machdep_WriteStatusFlagReg:09 (EMULATED !)
+      machdep_WriteDataReg:1F (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSound_DeviceControl: cmd=2 p1=0 p2=0 p3=0
+MaSndDrv_DeviceControl: cmd=2 p1=0 p2=0 p3=0
+  MaDevDrv_DeviceControl: cmd=2 p1=0 p2=0 p3=0
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:07 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSound_DeviceControl: cmd=4 p1=0 p2=0 p3=0
+MaSndDrv_DeviceControl: cmd=4 p1=0 p2=0 p3=0
+  MaDevDrv_DeviceControl: cmd=4 p1=0 p2=0 p3=0
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:0A (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSound_Create: cnv_id=1
+ ... MaMmfCnv_Initialize Fin
+MaSound_Load: id=1
+ ... MaMmfCnv_Load Fin  errorflag 1
+MaSound_Open: id=1 hd=1 md=0
+MaSndDrv_Create: st=0 tm=4 cm=12 rm=0 sa=0
+    MaResMgr_AllocSequencer  : id=0 -> sq_map=00000001
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:5E (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:1B (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+    MaResMgr_AllocTimer      : id=2 bt=0 tm=100 md=1 os=0    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:57 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+ -> tm_map=00000004
+    MaResMgr_AllocCh         : ch_map=0000FFFF -> ch_map=0000FFFF
+    MaResMgr_AllocFmVoice    : fm_map=0000FFFF -> fm_map=0000FFFF
+    MaResMgr_AllocFmVoice    : fm_map=00000000 -> fm_map=0000FFFF
+    MaResMgr_AllocWtVoice    : wt_map=000000FF -> wt_map=000000FF
+    MaResMgr_AllocRam        : rb_map=000000FF -> rb_map=000000FF
+    MaResMgr_AllocStreamAudio: sa_map=00000000
+    MaResMgr_AllocLed        : ld_map=00000001 -> ld_map=00000001
+    MaResMgr_AllocMotor      : mt_map=00000001 -> mt_map=00000001
+MaDevDrv_ClearFifo
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:28 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:60 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+    MaDevDrv_SendDirectRamData: adrs=4000 type=0 size=16
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:90 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:C9 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:91 (EMULATED !)
+      machdep_WriteDataReg:9A (EMULATED !)
+      machdep_WriteDataReg:F2 (EMULATED !)
+      machdep_WriteDataReg:4A (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:06 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:87 (EMULATED !)
+      machdep_WriteDataReg:FF (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:21 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetVoice: id=0 bn=0 pb=115 sy=1 key=0 ad=00004000
+MaSndDrv_SetVolume: id=0 vl=100
+ ... MaMmfCnv_Open Fin  returnvalue 0
+MaSound_Control: id=1 hd=1 cn=0
+MaSndDrv_SetVolume: id=0 vl=127
+MaSound_Standby: id=1 hd=1
+    MaDevDrv_SendDirectRamData: adrs=4010 type=0 size=30
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:9E (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:79 (EMULATED !)
+      machdep_WriteDataReg:45 (EMULATED !)
+      machdep_WriteDataReg:43 (EMULATED !)
+      machdep_WriteDataReg:47 (EMULATED !)
+      machdep_WriteDataReg:BF (EMULATED !)
+      machdep_WriteDataReg:A1 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteDataReg:07 (EMULATED !)
+      machdep_WriteDataReg:42 (EMULATED !)
+      machdep_WriteDataReg:54 (EMULATED !)
+      machdep_WriteDataReg:CF (EMULATED !)
+      machdep_WriteDataReg:14 (EMULATED !)
+      machdep_WriteDataReg:01 (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:63 (EMULATED !)
+      machdep_WriteDataReg:47 (EMULATED !)
+      machdep_WriteDataReg:CF (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:60 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:53 (EMULATED !)
+      machdep_WriteDataReg:54 (EMULATED !)
+      machdep_WriteDataReg:EF (EMULATED !)
+      machdep_WriteDataReg:14 (EMULATED !)
+      machdep_WriteDataReg:01 (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetVoice: id=0 bn=2 pb=12 sy=1 key=0 ad=00004010
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=0 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=0 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=0 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=0 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:20 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=1 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=1 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:11 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=1 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=1 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:21 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=2 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=2 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:12 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=2 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=2 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:22 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=3 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=3 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:13 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=3 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=3 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:23 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=4 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=4 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:14 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=4 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=4 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:24 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=5 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=5 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:15 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=5 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=5 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:25 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=6 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=6 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:16 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=6 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=6 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:26 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=7 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=7 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:17 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=7 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=7 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:27 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=8 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=8 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:18 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=8 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=8 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:28 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=9 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=9 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:19 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=9 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=9 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:29 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=10 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=10 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:1A (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=10 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=10 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:2A (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=11 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=11 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:1B (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=11 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=11 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:2B (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=12 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=12 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:1C (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=12 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=12 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:2C (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=13 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=13 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:1D (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=13 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=13 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:2D (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=14 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=14 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:1E (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=14 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=14 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:2E (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=8 p1=15 p2=0 p3=0
+ MaSndDrv_ChannelVolume: id=0 dt=-1 ch=15 vol=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:1F (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=9 p1=15 p2=64 p3=0
+ MaSndDrv_Panpot: id=0 dt=-1 ch=15 pan=64
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:2F (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=-1 cmd=23 p1=45 p2=0 p3=0
+ MaSndDrv_MasterVolume: id=0 dt=-1 vol=45
+ MaSndDrv_Nop: id=0 dt=-1 tp=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+ ... MaMmfCnv_Standby Fin
+MaSndDrv_ControlSequencer: id=0 ctrl=4
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:58 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SeekControl: id=0
+MaDevDrv_ClearFifo
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:28 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:60 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=24 p1=0 p2=0 p3=0
+ MaSndDrv_SystemOn: id=0 dt=0
+    MaDevDrv_SendDirectPacket: sz=92
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:E4 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:20 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:30 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=23 p1=100 p2=0 p3=0
+ MaSndDrv_MasterVolume: id=0 dt=0 vol=100
+ MaSndDrv_Nop: id=0 dt=0 tp=0
+    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=6 p1=9 p2=128 p3=0
+ MaSndDrv_ProgramChange: id=0 dt=0 ch=9 bn=128 pn=0
+MaSndDrv_SetCommand: id=0 dt=0 cmd=6 p1=0 p2=2 p3=12
+ MaSndDrv_ProgramChange: id=0 dt=0 ch=0 bn=2 pn=12
+  MaDevDrv_DeviceControl: cmd=8 p1=0 p2=0 p3=0
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:63 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:61 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+      machdep_WaitDelayedFifoEmpty (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:61 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+  MaDevDrv_DeviceControl: cmd=8 p1=3 p2=3 p3=3
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:63 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:BF (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaDevDrv_ClearFifo
+      machdep_WriteStatusFlagReg:04 (EMULATED !)
+      machdep_WriteDataReg:28 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:60 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:58 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+ ... MaMmfCnv_Seek Fin  returnvalue 0
+MaSound_Start: id=1 hd=1 pm=0
+ ... MaMmfCnv_Start
+MaSndDrv_ControlSequencer: id=0 ctrl=1
+MaDevDrv_Fifo: ctrl=2
+MaSndDrv_UpdateSequence
+MaSndDrv_SetCommand: id=0 dt=0 cmd=30 p1=0 p2=0 p3=0
+ MaSndDrv_Nop: id=0 dt=0 tp=0
+    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=0 p1=0 p2=38 p3=90
+ MaSndDrv_NoteOn: id=0 dt=0 ch=0 key=38 vel=90
+    MaDevDrv_SendDirectPacket: sz=21
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:48 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:05 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:90 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:48 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:44 (EMULATED !)
+      machdep_WriteDataReg:31 (EMULATED !)
+      machdep_WriteDataReg:21 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=750 cmd=3 p1=0 p2=38 p3=0
+ MaSndDrv_NoteOff: id=0 dt=750 ch=0 key=38
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:6E (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteDataReg:05 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=2500 cmd=12 p1=0 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=2500 ch=0
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:44 (EMULATED !)
+      machdep_WriteDataReg:93 (EMULATED !)
+      machdep_WriteDataReg:05 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:B0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=1 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=1
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=2 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=2
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=3 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=3
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=4 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=4
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=5 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=5
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=6 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=6
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=7 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=7
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=8 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=8
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=9 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=9
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=10 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=10
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=11 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=11
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=12 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=12
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=13 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=13
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=14 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=14
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=15 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=15
+MaSndDrv_SetCommand: id=0 dt=0 cmd=29 p1=127 p2=0 p3=0
+ MaSndDrv_UserEvent: id=0 dt=0 val=127
+    MaDevDrv_SendDirectPacket: sz=8
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:5D (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:FF (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:59 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:88 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndSeq_ReceiveMessage: id=0 fid=0 msg=128
+MaSndDrv_ControlSequencer: id=0 ctrl=2
+ ... MaMmfCnv_Stop
+MaSndDrv_ControlSequencer: id=0 ctrl=0
+ ... MaMmfCnv_Stop Fin  returnvalue 0
+MaSndDrv_ControlSequencer: id=0 ctrl=4
+ ... MaMmfCnv_Seek Fin  returnvalue 0
+ ... MaMmfCnv_Start
+MaSndDrv_ControlSequencer: id=0 ctrl=1
+ ... MaMmfCnv_Start Fin  returnvalue 0
+MaSndDrv_ControlSequencer: id=0 ctrl=3
+SendDelayedPacket: sz=8
+    MaDevDrv_SendDelayedPacket: sz=8
+      machdep_WriteStatusFlagReg:01 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:58 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:58 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_UpdateSequence
+MaSndDrv_SetCommand: id=0 dt=0 cmd=24 p1=0 p2=0 p3=0
+ MaSndDrv_SystemOn: id=0 dt=0
+    MaDevDrv_SendDirectPacket: sz=92
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:E4 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:20 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:30 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=23 p1=100 p2=0 p3=0
+ MaSndDrv_MasterVolume: id=0 dt=0 vol=100
+ MaSndDrv_Nop: id=0 dt=0 tp=0
+    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=6 p1=9 p2=128 p3=0
+ MaSndDrv_ProgramChange: id=0 dt=0 ch=9 bn=128 pn=0
+MaSndDrv_SetCommand: id=0 dt=0 cmd=6 p1=0 p2=2 p3=12
+ MaSndDrv_ProgramChange: id=0 dt=0 ch=0 bn=2 pn=12
+MaSndDrv_SetCommand: id=0 dt=0 cmd=30 p1=0 p2=0 p3=0
+ MaSndDrv_Nop: id=0 dt=0 tp=0
+    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=0 p1=0 p2=38 p3=90
+ MaSndDrv_NoteOn: id=0 dt=0 ch=0 key=38 vel=90
+    MaDevDrv_SendDirectPacket: sz=21
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:48 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:0B (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:90 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:48 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:06 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:44 (EMULATED !)
+      machdep_WriteDataReg:31 (EMULATED !)
+      machdep_WriteDataReg:21 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=750 cmd=3 p1=0 p2=38 p3=0
+ MaSndDrv_NoteOff: id=0 dt=750 ch=0 key=38
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:6E (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteDataReg:0B (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=2500 cmd=12 p1=0 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=2500 ch=0
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:44 (EMULATED !)
+      machdep_WriteDataReg:93 (EMULATED !)
+      machdep_WriteDataReg:0B (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:B0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=1 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=1
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=2 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=2
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=3 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=3
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=4 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=4
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=5 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=5
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=6 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=6
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=7 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=7
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=8 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=8
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=9 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=9
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=10 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=10
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=11 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=11
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=12 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=12
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=13 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=13
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=14 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=14
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=15 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=15
+MaSndDrv_SetCommand: id=0 dt=0 cmd=29 p1=127 p2=0 p3=0
+ MaSndDrv_UserEvent: id=0 dt=0 val=127
+    MaDevDrv_SendDirectPacket: sz=8
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:5D (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:FF (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:59 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:88 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndSeq_ReceiveMessage: id=0 fid=0 msg=128
+MaSndDrv_ControlSequencer: id=0 ctrl=2
+ ... MaMmfCnv_Stop
+MaSndDrv_ControlSequencer: id=0 ctrl=0
+ ... MaMmfCnv_Stop Fin  returnvalue 0
+MaSndDrv_ControlSequencer: id=0 ctrl=4
+ ... MaMmfCnv_Seek Fin  returnvalue 0
+ ... MaMmfCnv_Start
+MaSndDrv_ControlSequencer: id=0 ctrl=1
+ ... MaMmfCnv_Start Fin  returnvalue 0
+MaSndDrv_ControlSequencer: id=0 ctrl=3
+SendDelayedPacket: sz=8
+    MaDevDrv_SendDelayedPacket: sz=8
+      machdep_WriteStatusFlagReg:01 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:58 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:84 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:58 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_UpdateSequence
+MaSndDrv_SetCommand: id=0 dt=0 cmd=24 p1=0 p2=0 p3=0
+ MaSndDrv_SystemOn: id=0 dt=0
+    MaDevDrv_SendDirectPacket: sz=92
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:10 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:64 (EMULATED !)
+      machdep_WriteDataReg:E4 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:20 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:30 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:00 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=23 p1=100 p2=0 p3=0
+ MaSndDrv_MasterVolume: id=0 dt=0 vol=100
+ MaSndDrv_Nop: id=0 dt=0 tp=0
+    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=6 p1=9 p2=128 p3=0
+ MaSndDrv_ProgramChange: id=0 dt=0 ch=9 bn=128 pn=0
+MaSndDrv_SetCommand: id=0 dt=0 cmd=6 p1=0 p2=2 p3=12
+ MaSndDrv_ProgramChange: id=0 dt=0 ch=0 bn=2 pn=12
+MaSndDrv_SetCommand: id=0 dt=0 cmd=30 p1=0 p2=0 p3=0
+ MaSndDrv_Nop: id=0 dt=0 tp=0
+    MaDevDrv_SendDirectPacket: sz=4
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:66 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=0 p1=0 p2=38 p3=90
+ MaSndDrv_NoteOn: id=0 dt=0 ch=0 key=38 vel=90
+    MaDevDrv_SendDirectPacket: sz=21
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:48 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:11 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:90 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:48 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:0C (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:40 (EMULATED !)
+      machdep_WriteDataReg:08 (EMULATED !)
+      machdep_WriteDataReg:44 (EMULATED !)
+      machdep_WriteDataReg:31 (EMULATED !)
+      machdep_WriteDataReg:21 (EMULATED !)
+      machdep_WriteDataReg:C0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=750 cmd=3 p1=0 p2=38 p3=0
+ MaSndDrv_NoteOff: id=0 dt=750 ch=0 key=38
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:6E (EMULATED !)
+      machdep_WriteDataReg:85 (EMULATED !)
+      machdep_WriteDataReg:11 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=2500 cmd=12 p1=0 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=2500 ch=0
+    MaDevDrv_SendDirectPacket: sz=5
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:44 (EMULATED !)
+      machdep_WriteDataReg:93 (EMULATED !)
+      machdep_WriteDataReg:11 (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:B0 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=1 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=1
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=2 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=2
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=3 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=3
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=4 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=4
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=5 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=5
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=6 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=6
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=7 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=7
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=8 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=8
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=9 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=9
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=10 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=10
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=11 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=11
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=12 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=12
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=13 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=13
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=14 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=14
+MaSndDrv_SetCommand: id=0 dt=0 cmd=12 p1=15 p2=0 p3=0
+ MaSndDrv_AllSoundOff: id=0 dt=0 ch=15
+MaSndDrv_SetCommand: id=0 dt=0 cmd=29 p1=127 p2=0 p3=0
+ MaSndDrv_UserEvent: id=0 dt=0 val=127
+    MaDevDrv_SendDirectPacket: sz=8
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:5D (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:FF (EMULATED !)
+      machdep_WriteDataReg:80 (EMULATED !)
+      machdep_WriteDataReg:59 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:88 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+MaSndSeq_ReceiveMessage: id=0 fid=0 msg=128
+MaSndDrv_ControlSequencer: id=0 ctrl=2
+ ... MaMmfCnv_Stop
+MaSndDrv_ControlSequencer: id=0 ctrl=0
+ ... MaMmfCnv_Stop Fin  returnvalue 0
+MaSndDrv_ControlSequencer: id=0 ctrl=4
+ ... MaMmfCnv_Seek Fin  returnvalue 0
+ ... MaMmfCnv_Start
+MaSndDrv_ControlSequencer: id=0 ctrl=1
+ ... MaMmfCnv_Start Fin  returnvalue 0
+MaSndDrv_ControlSequencer: id=0 ctrl=3
+SendDelayedPacket: sz=8
+MaDevDrv_StartSequencer: seq_id=0
+      machdep_WriteStatusFlagReg:00 (EMULATED !)
+    MaDevDrv_ReceiveData: adrs=354, bufadrs=1
+      machdep_WriteStatusFlagReg:03 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:62 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WaitValidData:20 (EMULATED !)
+      machdep_WriteStatusFlagReg:22 (EMULATED !)
+      machdep_ReadDataReg (EMULATED !)
+      machdep_WriteStatusFlagReg:00 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:62 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:FF (EMULATED !)
+      machdep_WriteStatusFlagReg:00 (EMULATED !)
+    MaDevDrv_SendDirectPacket: sz=3
+      machdep_WriteStatusFlagReg:02 (EMULATED !)
+      machdep_WaitImmediateFifoEmpty (EMULATED !)
+      machdep_WriteDataReg:61 (EMULATED !)
+      machdep_WriteDataReg:82 (EMULATED !)
+      machdep_WriteDataReg:81 (EMULATED !)
+      machdep_WriteStatusFlagReg:00 (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
+ ... MaMmfCnv_Start Fin  returnvalue 0
+    MaDevDrv_IntHandler
+      machdep_WriteStatusFlagReg:00 (EMULATED !)
+      machdep_ReadDataReg (EMULATED !)
+      machdep_WriteStatusFlagReg:80 (EMULATED !)
