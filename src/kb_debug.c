@@ -7,16 +7,22 @@ char hexTable[] = "0123456789ABCDEF";
 
 //------------------------------------------------------------------------------------------------------------
 
-void dbg_DumpBuffer(const void* ptr, int size)
+void dbg_DumpBuffer(char* title, const void* ptr, int size)
 {
 #define _PER_LINE 16
 #define _PER_LINE_STR (_PER_LINE + 1)
 #define _PER_LINE_HEX ((_PER_LINE * 3) + 1)
 
+
+	if (title != NULL) {
+		printf(title);
+		printf("\n");
+	}
+
 	char str[_PER_LINE_STR], hex[_PER_LINE_HEX];
 
 	unsigned char currentChar;
-	
+
 	int i = 0, j = 0;
 	const unsigned char* buf = (const unsigned char*)ptr;
 
@@ -53,7 +59,7 @@ void dbg_DumpBuffer(const void* ptr, int size)
 		str[i] = 0x00;
 		while (i < _PER_LINE)
 		{
-			sprintf(hex + (i*3), "   ");
+			sprintf(hex + (i * 3), "   ");
 #if 0
 			hex[i * 3] = ' ';
 			hex[i * 3 + 1] = ' ';

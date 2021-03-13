@@ -1781,6 +1781,11 @@ if ( delta_time >= 0 )
 
     -----------------------------------------------------------------
 
+    bFb	 = (UINT8)((pM2V[3] & 0x38) >> 3);
+    bAlg = (UINT8)(pM2V[3] & 0x07);
+    if((bAlg & 0x06) == 0)			bNumofOp = 2;
+    if(bM2Size < MA2VOICE_4OP_SIZE)	bNumofOp = 2;
+
     pM3V[0] = (UINT8)(0x80 | (pM2V[4] & 0x03));	//	panpot = 0x10 center
     pM3V[1] = (UINT8)((pM2V[3] & 0xC0) | bAlg);
 
@@ -1812,6 +1817,23 @@ if ( delta_time >= 0 )
 
         pM3V += 7;
     }
+
+    bFb	3 bits
+    bAlg 3 bits   (bAlg & 0x06) == ) ->	bNumofOp = 2
+
+
+    bVib 1 bit
+    bEgt 1 bit
+    bSus 1 bit
+    bKsr 1 bit
+
+    bRR 4 bits
+    bDR 4 bits
+
+    bDvb 2 bits
+    bDam 2 bits
+    bAm 1 bit
+    bWs 3 bits
 
     00 PANPOT
     01 ALG

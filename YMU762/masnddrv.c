@@ -882,6 +882,9 @@ static UINT16 GetFmBlockFnum
 	if ( bank_no < 128 )
 	{
 		rkey = GetRealKeyMelody( seq_id, ch, (UINT8)key & 0x7F );
+
+		MASNDDRV_DBGMSG(("GetFmBlockFnum key:$%04X rkey:$%04X melMod:%d prog_no:%d\n", key, rkey, ma_snddrv_info[seq_id].melody_mode, prog_no));
+
 		switch ( ma_snddrv_info[seq_id].melody_mode )
 		{
 		case 0:
@@ -940,6 +943,8 @@ static UINT16 GetFmBlockFnum
 		pitch = ma_fm_block_100[rkey];
 	}
 
+	MASNDDRV_DBGMSG(("-> pitch:$%04X\n", pitch));
+
 	return pitch;
 }
 /****************************************************************************
@@ -982,10 +987,18 @@ static UINT16 GetFmBlockFnumMa2
 
 	if (ma_channel_info[ch].key_control == 2) {
 		keycon = ma_snddrv_info[seq_id].key_offset + 12;
+
+		MASNDDRV_DBGMSG(("GetFmBlockFnumMa2 key:$%04X keycon:%04X blk:$%X fnum:$%04X\n", key, keycon, block, fnum));
+
 		fnum *= ma_ma2ex_fnum[keycon];
 	}
-	else
+	else {
+		MASNDDRV_DBGMSG(("GetFmBlockFnumMa2 key:$%04X blk:$%X fnum:$%04X\n", key, block, fnum));
+
 		fnum *= 0x10911;	/* 49700/48000 */
+	}
+
+
 	fnum >>= 16;
 	while ( fnum > 1023 )
 	{
@@ -997,6 +1010,8 @@ static UINT16 GetFmBlockFnumMa2
 		            | ((block << 7) & 0x0380)
 		            | ( fnum        & 0x007F) );
 
+	MASNDDRV_DBGMSG(("-> pitch:$%04X\n", pitch));
+			
 	return pitch;
 }
 /****************************************************************************
@@ -1093,7 +1108,7 @@ static UINT16 GetWtBlockFnum
 	                | ((block << 7) & 0x0380)
 		            | ( fnum        & 0x007F) );
 
-	return pitch;
+		return pitch;
 }
 /****************************************************************************
  *	MakeStreamAudioParam

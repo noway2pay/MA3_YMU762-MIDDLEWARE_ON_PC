@@ -356,6 +356,7 @@ SINT32 MaDevDrv_SendDelayedPacket
 
 	//MADEVDRV_DBGMSG(("    MaDevDrv_SendDelayedPacket: pt=%p, sz=%d\n", ptr, size));
 	MADEVDRV_DBGMSG(("    MaDevDrv_SendDelayedPacket: sz=%d\n", size));
+	dbg_DumpBuffer(NULL, ptr, size);
 
 	machdep_WriteStatusFlagReg( MA_DELAYED_WRITE_REG );
 
@@ -402,6 +403,8 @@ SINT32 MaDevDrv_SendDirectPacket
 
 	//MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectPacket: pt=%p, sz=%d\n", ptr, size));
 	MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectPacket: sz=%d\n", size));
+	dbg_DumpBuffer(NULL, ptr, size);
+
 
 	machdep_WriteStatusFlagReg( MA_IMMEDIATE_WRITE_REG );
 
@@ -565,7 +568,8 @@ SINT32 MaDevDrv_SendDirectRamData
 #endif
 
 	//MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectRamData: adrs=%04lX type=%d ptr=%p size=%ld\n", address, data_type, data_ptr, data_size));
-	MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectRamData: adrs=%04lX type=%d size=%ld\n", address, data_type, data_size));
+	MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectRamData: adrs=$%04lX type=%d size=%ld\n", address, data_type, data_size));
+	dbg_DumpBuffer(NULL, data_ptr, data_size);
 
  	if ( data_size == 0 ) return MASMW_SUCCESS;
 
@@ -720,7 +724,7 @@ SINT32 MaDevDrv_SendDirectRamVal
 	if ( result < MASMW_SUCCESS ) return result;
 #endif
 
-	MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectRamVal: adrs=%04lX size=%ld val=%02X\n", address, data_size, val));
+	MADEVDRV_DBGMSG(("    MaDevDrv_SendDirectRamVal: adrs=$%04lX size=%ld val=%02X\n", address, data_size, val));
 
 	if ( data_size == 0 ) return MASMW_SUCCESS;
 

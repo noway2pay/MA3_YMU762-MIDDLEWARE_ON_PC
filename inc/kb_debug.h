@@ -132,8 +132,7 @@ void initializeEventsLog(void);
 
 #endif // #ifdef KB_DEBUG_ENABLED
 
-
-void dbg_DumpBuffer(const void* ptr, int size);
+void dbg_DumpBuffer(char* title, const void* ptr, int size);
 
 #endif /* KB_DEBUG_H_INCLUDED */
 
